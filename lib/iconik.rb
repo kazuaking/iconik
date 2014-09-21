@@ -14,7 +14,6 @@ module Iconik
   end
 
   module GooglePlay
-    # https://play.google.com/store/apps/details?id=jp.gungho.pad
     def self.get_icon_url(url)
       client = Iconik::HttpClient.new(url)
       r = client.response_body
