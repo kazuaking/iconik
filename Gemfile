@@ -4,3 +4,8 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'nokogiri'
+group :test do
+  gem 'rspec'
+  gem 'webmock'
+  gem 'vcr'
+end
