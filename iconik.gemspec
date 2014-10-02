@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Iconik::VERSION
   spec.authors       = ["kazuaking"]
   spec.email         = ["kazuaki.it@gmail.com"]
-  spec.summary       = %q{app icon URL getting for apple store, google play and web favicon.}
-  spec.description   = %q{app icon URL getting for apple store, google play and web favicon.}
+  spec.summary       = %q{This library gets the icon from the page of GooglePlay and the iTunes store.}
+  spec.description   = %q{This library gets the icon from the page of GooglePlay and the iTunes store.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
