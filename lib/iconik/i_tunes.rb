@@ -1,4 +1,4 @@
-require "iconik/store"
+require 'iconik/store'
 
 module Iconik
   class ITunes < Iconik::Store
@@ -11,8 +11,7 @@ module Iconik
     end
 
     def pluck_icon
-      r = client.response_body
-      j = JSON.parse r
+      j = JSON.parse(client.response_body)
       j['results'][0]['artworkUrl60']
     end
 

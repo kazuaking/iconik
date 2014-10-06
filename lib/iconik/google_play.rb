@@ -1,4 +1,4 @@
-require "iconik/store"
+require 'iconik/store'
 require 'nokogiri'
 
 module Iconik
@@ -7,7 +7,7 @@ module Iconik
     def pluck_icon
       r = client.response_body
       doc = Nokogiri::HTML.parse(r, nil, nil)
-      doc.css(".cover-image")[0][:src]
+      doc.css('.cover-image')[0][:src]
     end
   end
 end
