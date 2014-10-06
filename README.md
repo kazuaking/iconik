@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/kazuaking/iconik.png)](https://travis-ci.org/kazuaking/iconik)
+[![Coverage Status](https://coveralls.io/repos/kazuaking/iconik/badge.png?branch=master)](https://coveralls.io/r/kazuaking/iconik?branch=master)
 
 # Iconik
 
