@@ -2,20 +2,24 @@ require 'iconik/store'
 
 module Iconik
   class ITunes < Iconik::Store
-    attr_reader :appid
+    attr_reader :scraping
 
-    def initialize(arg_url)
+    def initialize(arg_url, scraping: false)
+      @scraping = scraping
       @url = arg_url
-      @appid = pluck_app_id(url)
-      @client = Iconik::HttpClient.new("http://itunes.apple.com/lookup?id=#{appid}&country=JP")
+      get_url = scraping ? @url : "http://itunes.apple.com/lookup?id=#{pluck_app_id(url)}&country=JP"
+      @client = Iconik::HttpClient.new(get_url)
     end
 
     def pluck_icon
-      j = JSON.parse(client.response_body)
-      j['results'][0]['artworkUrl60']
+      scraping ? nil : pluck_icon_for_json
     end
 
     private
+    def pluck_icon_for_json
+      j = JSON.parse(client.response_body)
+      j['results'][0]['artworkUrl60']
+    end
 
     def pluck_app_id(url)
       md = url.match(/\/id([0-9]+)/)
