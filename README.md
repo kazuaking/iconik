@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/kazuaking/iconik.png)](https://travis-ci.org/kazuaking/iconik)
+
 # Iconik
 
 This library gets the icon from the page of GooglePlay and the iTunes store .
