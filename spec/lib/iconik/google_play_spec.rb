@@ -13,7 +13,7 @@ describe Iconik do
       let(:url) { 'https://play.google.com/store/apps/details?id=aaaaaaaaaaaaaa&hl=ja' }
       let(:iconik) { Iconik::GooglePlay.new(url) }
       subject { VCR.use_cassette('google invalid id') { iconik.pluck_icon } }
-      it { expect { subject }.to_not raise_error OpenURI::HTTPError }
+      it { expect { subject }.to raise_error Iconik::UnknownAppError }
     end
     context 'url invalid' do
       let(:url) { 'hoge' }
