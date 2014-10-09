@@ -5,6 +5,6 @@ require 'iconik/i_tunes'
 require 'json'
 
 module Iconik
-  class InvalidURIError < Exception; end
-  class UnknownAppError < Exception; end
+  class InvalidURIError < StandardError; end
+  class UnknownAppError < StandardError; end
 end
