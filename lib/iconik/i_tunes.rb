@@ -4,9 +4,9 @@ module Iconik
   class ITunes < Iconik::Store
     attr_reader :scraping
 
-    def initialize(arg_url, scraping: false)
+    def initialize(url, scraping: false)
       @scraping = scraping
-      @url = arg_url
+      @url = url
     end
 
     def pluck_icon
