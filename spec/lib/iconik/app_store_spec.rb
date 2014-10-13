@@ -4,7 +4,7 @@ require 'iconik/app_store'
 describe Iconik do
   describe 'Iconik::AppStore' do
     let(:pluck_icon) { iconik.pluck_icon }
-    let(:iconik) { Iconik::AppStore.new(url: url) }
+    let(:iconik) { Iconik::AppStore.new(url) }
     context 'google play' do
       let(:url) { 'https://play.google.com/store/apps/details?id=com.nianticproject.ingress&hl=ja' }
       subject { VCR.use_cassette('google play') { pluck_icon } }
