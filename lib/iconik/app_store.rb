@@ -1,4 +1,3 @@
-require 'iconik/http_client'
 require 'iconik/google_play'
 require 'iconik/i_tunes'
 
@@ -13,7 +12,7 @@ module Iconik
     end
 
     def pluck_icon
-      raise UnknownAppDomainError unless store
+      raise Iconik::UnknownAppDomainError unless store
       store.pluck_icon
     end
 
