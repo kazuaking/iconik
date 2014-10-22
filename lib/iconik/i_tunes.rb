@@ -11,7 +11,7 @@ module Iconik
     end
 
     def pluck_icon
-      country ? country_params = "&country=#{country}" : ""
+      country ? country_params = "&country=#{country}" : "&country=JP"
       get_url = scraping ? @url : "http://itunes.apple.com/lookup?id=#{pluck_app_id(url)}#{country_params}"
       @client = Iconik::HttpClient.new(get_url)
       scraping ? pluck_icon_for_scraping : pluck_icon_for_json
