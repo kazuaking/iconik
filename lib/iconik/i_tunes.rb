@@ -29,7 +29,7 @@ module Iconik
 
     def pluck_icon_for_json
       j = JSON.parse(client.response_body)
-      raise Iconik::UnknownAppError if j['resultCount'] == 0
+      raise Iconik::ResultCountZero if j['resultCount'] == 0
       j['results'][0]['artworkUrl60']
     end
 

@@ -23,7 +23,7 @@ module Iconik
     end
 
     def google_play?
-      url.include?('//play.google.com/')
+      url.include?('//play.google.com/') || url.include?('//market.android.com/')
     end
   end
 end

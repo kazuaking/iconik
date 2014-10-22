@@ -14,7 +14,7 @@ describe Iconik do
       context 'id invalid' do
         let(:url) { 'https://itunes.apple.com/jp/app/ingress/id9999?mt=8' }
         subject { VCR.use_cassette('iTunes api invalid id') { iconik.pluck_icon } }
-        it { expect { subject }.to raise_error Iconik::UnknownAppError }
+        it { expect { subject }.to raise_error Iconik::ResultCountZero }
       end
       context 'url invalid' do
         let(:url) { 'hoge' }
