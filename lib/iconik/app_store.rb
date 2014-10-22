@@ -13,7 +13,8 @@ module Iconik
     end
 
     def pluck_icon
-      @store.pluck_icon
+      raise UnknownAppDomainError unless store
+      store.pluck_icon
     end
 
     private

@@ -5,6 +5,11 @@ describe Iconik do
   describe 'Iconik::AppStore' do
     let(:pluck_icon) { iconik.pluck_icon }
     let(:iconik) { Iconik::AppStore.new(url) }
+    context 'Unknown App Domain' do
+      let(:url) { 'https://yahoo.com' }
+      subject { pluck_icon }
+      it { expect { subject }.to raise_error Iconik::UnknownAppDomainError }
+    end
     context 'google play' do
       let(:url) { 'https://play.google.com/store/apps/details?id=com.nianticproject.ingress&hl=ja' }
       subject { VCR.use_cassette('google play') { pluck_icon } }

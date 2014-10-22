@@ -8,4 +8,6 @@ require 'json'
 module Iconik
   class InvalidURIError < StandardError; end
   class UnknownAppError < StandardError; end
+  class UnknownAppDomainError < StandardError; end
+  class ResultCountZero < StandardError; end
 end
