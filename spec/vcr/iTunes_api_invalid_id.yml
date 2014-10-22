@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://itunes.apple.com/lookup?country=JP&id=9999
+    uri: http://itunes.apple.com/lookup?id=9999
     body:
       encoding: US-ASCII
       string: ''
@@ -10,40 +10,42 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - '*/*'
       User-Agent:
       - Ruby
+      Host:
+      - itunes.apple.com
   response:
     status:
       code: 200
       message: OK
     headers:
       X-Apple-Jingle-Correlation-Key:
-      - 3SMOSLNEUEVO2
+      - 25NVUODLWQCVG
       X-Apple-Translated-Wo-Url:
-      - "/WebObjects/MZStoreServices.woa/ws/wsLookup?id=9999&country=JP&urlDesc="
+      - /WebObjects/MZStoreServices.woa/ws/wsLookup?id=9999&urlDesc=
       X-Apple-Orig-Url:
-      - http://itunes.apple.com/lookup?id=9999&country=JP
+      - http://itunes.apple.com/lookup?id=9999
       X-Apple-Application-Site:
-      - ST11
+      - NWK
       Apple-Timing-App:
-      - 3 ms
+      - 19 ms
       Content-Type:
       - text/javascript; charset=utf-8
       X-Apple-Application-Instance:
-      - '2090294'
+      - '1051022'
       X-Webobjects-Loadaverage:
       - '0'
       Server:
       - ATS/4.1.0
       X-Apple-Ats-Cache-Key:
-      - "/17.173.38.169/80/lookup/browser?country=JP&id=9999"
+      - /17.154.42.220/80/lookup/browser?id=9999
       Vary:
       - Accept-Encoding
       Cache-Control:
-      - no-transform, max-age=60
+      - no-transform, max-age=55
       Date:
-      - Wed, 08 Oct 2014 09:58:43 GMT
+      - Wed, 22 Oct 2014 06:40:49 GMT
       Content-Length:
       - '42'
       Connection:
@@ -63,5 +65,5 @@ http_interactions:
 
 
     http_version: 
-  recorded_at: Wed, 08 Oct 2014 09:58:45 GMT
+  recorded_at: Wed, 22 Oct 2014 06:40:49 GMT
 recorded_with: VCR 2.9.3

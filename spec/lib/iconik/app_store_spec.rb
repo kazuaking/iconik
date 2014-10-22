@@ -18,7 +18,7 @@ describe Iconik do
     context 'iTunes' do
       let(:url) { 'https://itunes.apple.com/jp/app/ingress/id576505181?mt=8' }
       subject { VCR.use_cassette('iTunes store') { pluck_icon } }
-      it { expect(subject).to eq 'http://a1894.phobos.apple.com/us/r30/Purple5/v4/e3/8c/4a/e38c4a06-d8a6-d1d8-a488-21fec841b47b/Icon-57.png' }
+      it { expect(subject).to eq 'http://a464.phobos.apple.com/us/r30/Purple1/v4/81/53/ad/8153adc7-b418-7ee1-dbd6-453f9b251c3d/Icon-57.png' }
     end
   end
 end

@@ -10,9 +10,11 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - '*/*'
       User-Agent:
       - Ruby
+      Host:
+      - play.google.com
   response:
     status:
       code: 404
@@ -25,12 +27,12 @@ http_interactions:
       Expires:
       - Fri, 01 Jan 1990 00:00:00 GMT
       Date:
-      - Wed, 08 Oct 2014 09:55:59 GMT
+      - Wed, 22 Oct 2014 06:40:47 GMT
       Content-Type:
       - text/html; charset=utf-8
       Set-Cookie:
-      - NID=67=E-4DAafU1FdnpJ4sBCb_2dEx7gdMoJi6E06uXsOzRDZCOKqEWXTONNA_8-p-Sa--TTmIZXANN6kOqAAOO-p5tmRtxCsg_v2WAY3YU75jcSK1ve8t0vx1cXC5EBrhWZv4;Domain=.google.com;Path=/;Expires=Thu,
-        09-Apr-2015 09:55:59 GMT;HttpOnly
+      - NID=67=Oh2k_9cOd_qNYrc-51AtwkjU3A69GRlp7m50_wBcNiwoc8YVuLJBSv1tBcY_xS7DDf5npuZcI5TzFw2rrDU_EKvmO_glHxl8eFAsfe6NuWOxQmBiGnDcqlB2iAKZtIzo;Domain=.google.com;Path=/;Expires=Thu,
+        23-Apr-2015 06:40:47 GMT;HttpOnly
       P3p:
       - CP="This is not a P3P policy! See http://www.google.com/support/accounts/bin/answer.py?hl=en&answer=151657
         for more info."
@@ -95,5 +97,5 @@ http_interactions:
           </style>
           </head><body text="#000000" bgcolor="#ffffff" dir="ltr"><div id="content"><div id="error-section" class="rounded">We're sorry, the requested URL was not found on this server.</div><div id="search-section" class="rounded"><a href="/store"><img id="logo" src="//ssl.gstatic.com/android/market_images/web/play_logo.png" alt="Google Play"></a><form id="search-box" method="get" action="/store/search" style="margin: 32px 10px;"><input type="text" value="" name="q"><input type="submit" value="Search"></form><div style="clear:both"></div></div></div></body></html>
     http_version: 
-  recorded_at: Wed, 08 Oct 2014 09:56:02 GMT
+  recorded_at: Wed, 22 Oct 2014 06:40:47 GMT
 recorded_with: VCR 2.9.3

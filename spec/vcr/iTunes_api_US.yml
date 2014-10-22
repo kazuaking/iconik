@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://itunes.apple.com/lookup?id=576505181
+    uri: http://itunes.apple.com/lookup?country=US&id=576505181
     body:
       encoding: US-ASCII
       string: ''
@@ -21,31 +21,31 @@ http_interactions:
       message: OK
     headers:
       X-Apple-Jingle-Correlation-Key:
-      - SKQYK6GZ6LUJO
+      - GOHNU3YCRA7BA
       X-Apple-Translated-Wo-Url:
-      - /WebObjects/MZStoreServices.woa/ws/wsLookup?id=576505181&urlDesc=
+      - /WebObjects/MZStoreServices.woa/ws/wsLookup?id=576505181&country=US&urlDesc=
       X-Apple-Orig-Url:
-      - http://itunes.apple.com/lookup?id=576505181
+      - http://itunes.apple.com/lookup?id=576505181&country=US
       X-Apple-Application-Site:
-      - ST11
+      - NWK
       Apple-Timing-App:
-      - 28 ms
+      - 29 ms
       Content-Type:
       - text/javascript; charset=utf-8
       X-Apple-Application-Instance:
-      - '2089222'
+      - '1052020'
       X-Webobjects-Loadaverage:
       - '0'
       Server:
       - ATS/4.1.0
       X-Apple-Ats-Cache-Key:
-      - /17.173.38.169/80/lookup/browser?id=576505181
+      - /17.154.42.217/80/lookup/browser?country=US&id=576505181
       Vary:
       - Accept-Encoding
       Cache-Control:
-      - no-transform, max-age=1
+      - no-transform, max-age=60
       Date:
-      - Wed, 22 Oct 2014 06:40:50 GMT
+      - Wed, 22 Oct 2014 06:40:51 GMT
       Content-Length:
       - '4499'
       Connection:
@@ -57,11 +57,11 @@ http_interactions:
       string: !binary |-
         CgoKewogInJlc3VsdENvdW50IjoxLAogInJlc3VsdHMiOiBbCnsia2luZCI6
         InNvZnR3YXJlIiwgImZlYXR1cmVzIjpbImlvc1VuaXZlcnNhbCJdLCAKInN1
-        cHBvcnRlZERldmljZXMiOlsiaVBhZFRoaXJkR2VuNEciLCAiaVBhZEZvdXJ0
-        aEdlbjRHIiwgImlQb2RUb3VjaEZpZnRoR2VuIiwgImlQYWRUaGlyZEdlbiIs
-        ICJpUGhvbmU1IiwgImlQYWRGb3VydGhHZW4iLCAiaVBob25lNCIsICJpUGFk
-        TWluaSIsICJpUGFkMjNHIiwgImlQaG9uZTRTIiwgImlQYWQyV2lmaSIsICJp
-        UGhvbmU1YyIsICJpUGhvbmU1cyIsICJpUGFkTWluaTRHIl0sICJpc0dhbWVD
+        cHBvcnRlZERldmljZXMiOlsiaVBob25lNFMiLCAiaVBhZFRoaXJkR2VuNEci
+        LCAiaVBob25lNSIsICJpUGFkTWluaTRHIiwgImlQYWRGb3VydGhHZW40RyIs
+        ICJpUGhvbmU1YyIsICJpUGFkVGhpcmRHZW4iLCAiaVBhZEZvdXJ0aEdlbiIs
+        ICJpUGhvbmU0IiwgImlQYWQyM0ciLCAiaVBhZE1pbmkiLCAiaVBvZFRvdWNo
+        RmlmdGhHZW4iLCAiaVBob25lNXMiLCAiaVBhZDJXaWZpIl0sICJpc0dhbWVD
         ZW50ZXJFbmFibGVkIjpmYWxzZSwgCiJzY3JlZW5zaG90VXJscyI6WyJodHRw
         Oi8vYTUubXpzdGF0aWMuY29tL3VzL3IzMC9QdXJwbGU0L3Y0L2JkL2E0LzBl
         L2JkYTQwZWVhLWI5YzMtYzZmOS0xNjAwLThhMzAzMjg1NWI4NC9zY3JlZW4x
@@ -156,5 +156,5 @@ http_interactions:
         JnVvPTQiLCAidHJhY2tDb250ZW50UmF0aW5nIjoiOSsiLCAiYXZlcmFnZVVz
         ZXJSYXRpbmciOjMuNSwgInVzZXJSYXRpbmdDb3VudCI6MTAyMX1dCn0KCgo=
     http_version: 
-  recorded_at: Wed, 22 Oct 2014 06:40:50 GMT
+  recorded_at: Wed, 22 Oct 2014 06:40:51 GMT
 recorded_with: VCR 2.9.3

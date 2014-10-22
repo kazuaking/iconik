@@ -10,53 +10,55 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - '*/*'
       User-Agent:
       - Ruby
+      Host:
+      - itunes.apple.com
   response:
     status:
       code: 200
       message: OK
     headers:
       Last-Modified:
-      - Wed, 08 Oct 2014 10:18:22 GMT
+      - Wed, 22 Oct 2014 06:40:49 GMT
       X-Apple-Request-Store-Front:
-      - "<null>"
+      - <null>
       X-Apple-Translated-Wo-Url:
-      - "/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=9999&cc=jp&urlDesc=/ingress"
+      - /WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=9999&cc=jp&urlDesc=/ingress
       X-Apple-Orig-Url:
       - https://itunes.apple.com/jp/app/ingress/id9999?mt=8
       X-Apple-Application-Site:
-      - NWK
+      - ST11
       Apple-Timing-App:
-      - 24 ms
+      - 8 ms
       X-Apple-Asset-Version:
       - '0'
       X-Apple-Aka-Ttl:
-      - Generated Wed Oct 08 03:18:22 PDT 2014, Expires Wed Oct 08 03:19:22 PDT 2014,
+      - Generated Tue Oct 21 23:40:49 PDT 2014, Expires Tue Oct 21 23:41:49 PDT 2014,
         TTL 60s
       X-Apple-Lokamai-No-Cache:
       - 'true'
       X-Apple-Date-Generated:
-      - Wed, 08 Oct 2014 10:18:22 GMT
+      - Wed, 22 Oct 2014 06:40:49 GMT
       X-Apple-Application-Instance:
-      - '1014913'
+      - '2126062'
       Content-Type:
       - text/html; charset=utf-8
       X-Webobjects-Loadaverage:
       - '0'
       X-Apple-Jingle-Correlation-Key:
-      - JE3VUZDFYOADY
+      - FMFL2VP3ICEYK
       Server:
       - ATS/4.1.0
       X-Apple-Ats-Cache-Key:
-      - "/17.154.42.212/80/jp/app/ingress/id9999/browser/https?mt=8"
+      - /17.173.38.161/80/jp/app/ingress/id9999/browser/https?mt=8
       Vary:
       - Accept-Encoding
       Cache-Control:
-      - no-transform, max-age=57
+      - no-transform, max-age=55
       Date:
-      - Wed, 08 Oct 2014 10:18:22 GMT
+      - Wed, 22 Oct 2014 06:40:49 GMT
       Content-Length:
       - '5454'
       Connection:
@@ -74,9 +76,9 @@ http_interactions:
         gbjmjqXntprkuK3jgafjgZnjgIIiPjwvbWV0YT4KICAgIDxtZXRhIG5hbWU9
         ImtleXdvcmRzIiBjb250ZW50PSJpVHVuZXMgU3RvcmUiPjwvbWV0YT4KCiAg
         ICA8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCIgY2hhcnNldD0idXRm
-        LTgiIHNyYz0iL2h0bWxSZXNvdXJjZXMvQzNEQy93ZWItc3RvcmVmcm9udC1i
+        LTgiIHNyYz0iL2h0bWxSZXNvdXJjZXMvMDQxNC93ZWItc3RvcmVmcm9udC1i
         YXNlLmpzIj48L3NjcmlwdD4KPHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3Jp
-        cHQiIGNoYXJzZXQ9InV0Zi04IiBzcmM9Ii9odG1sUmVzb3VyY2VzL0MzREMv
+        cHQiIGNoYXJzZXQ9InV0Zi04IiBzcmM9Ii9odG1sUmVzb3VyY2VzLzA0MTQv
         d2ViLXN0b3JlZnJvbnQtcHJldmlldy5qcyI+PC9zY3JpcHQ+CgogICAgPHNj
         cmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiPml0bXMuUGFnZURhdGEuaXR1
         bmVzRG93bmxvYWRVcmw9J2h0dHA6Ly93d3cuYXBwbGUuY29tL2pwL2l0dW5l
@@ -189,5 +191,5 @@ http_interactions:
         bmRDaGlsZChjb250YWluaW5nRGl2KTsKPC9zY3JpcHQ+CgoKICA8L2JvZHk+
         CjwvSFRNTD4K
     http_version: 
-  recorded_at: Wed, 08 Oct 2014 10:18:25 GMT
+  recorded_at: Wed, 22 Oct 2014 06:40:49 GMT
 recorded_with: VCR 2.9.3
