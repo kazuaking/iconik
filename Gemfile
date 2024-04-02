@@ -6,6 +6,7 @@ gemspec
 gem 'nokogiri'
 
 group :test do
+  gem 'rubocop'
   gem 'rspec'
   gem 'coveralls', require: false
   gem 'webmock'
