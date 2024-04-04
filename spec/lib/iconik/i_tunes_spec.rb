@@ -8,7 +8,7 @@ describe Iconik do
     context 'scraping: false' do
       context 'normal' do
         subject { VCR.use_cassette('iTunes api') { iconik.pluck_icon } }
-        it { expect(subject).to eq 'http://a464.phobos.apple.com/us/r30/Purple1/v4/81/53/ad/8153adc7-b418-7ee1-dbd6-453f9b251c3d/Icon-57.png' }
+        it { expect(subject).to eq 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0c/86/7d/0c867d57-0a52-5053-3641-4f68856d1099/AppIcon-1x_U007emarketing-0-7-0-85-220.png/60x60bb.jpg' }
       end
       context 'set country JP' do
         let(:iconik) { Iconik::ITunes.new(url, country: :JP) }
@@ -18,7 +18,7 @@ describe Iconik do
       context 'set country US' do
         let(:iconik) { Iconik::ITunes.new(url, country: :US) }
         subject { VCR.use_cassette('iTunes api US') { iconik.pluck_icon } }
-        it { expect(subject).to eq 'http://a464.phobos.apple.com/us/r30/Purple1/v4/81/53/ad/8153adc7-b418-7ee1-dbd6-453f9b251c3d/Icon-57.png' }
+        it { expect(subject).to eq 'https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0c/86/7d/0c867d57-0a52-5053-3641-4f68856d1099/AppIcon-1x_U007emarketing-0-7-0-85-220.png/60x60bb.jpg' }
       end
       context 'id invalid' do
         let(:url) { 'https://itunes.apple.com/jp/app/ingress/id9999?mt=8' }

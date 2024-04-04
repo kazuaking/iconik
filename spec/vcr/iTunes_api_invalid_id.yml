@@ -10,7 +10,7 @@ http_interactions:
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - '*/*'
+      - "*/*"
       User-Agent:
       - Ruby
       Host:
@@ -23,7 +23,7 @@ http_interactions:
       X-Apple-Jingle-Correlation-Key:
       - 25NVUODLWQCVG
       X-Apple-Translated-Wo-Url:
-      - /WebObjects/MZStoreServices.woa/ws/wsLookup?id=9999&urlDesc=
+      - "/WebObjects/MZStoreServices.woa/ws/wsLookup?id=9999&urlDesc="
       X-Apple-Orig-Url:
       - http://itunes.apple.com/lookup?id=9999
       X-Apple-Application-Site:
@@ -39,7 +39,7 @@ http_interactions:
       Server:
       - ATS/4.1.0
       X-Apple-Ats-Cache-Key:
-      - /17.154.42.220/80/lookup/browser?id=9999
+      - "/17.154.42.220/80/lookup/browser?id=9999"
       Vary:
       - Accept-Encoding
       Cache-Control:
@@ -64,6 +64,95 @@ http_interactions:
         }
 
 
-    http_version: 
   recorded_at: Wed, 22 Oct 2014 06:40:49 GMT
-recorded_with: VCR 2.9.3
+- request:
+    method: get
+    uri: http://itunes.apple.com/lookup?country=jp&id=9999
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - itunes.apple.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Apple-Jingle-Correlation-Key:
+      - VCQ6GGCKSML57JV6HUDVF6QTME
+      X-Apple-Request-Uuid:
+      - a8a1e318-4a93-17df-a6be-3d0752fa1361
+      X-Apple-Translated-Wo-Url:
+      - "/WebObjects/MZStoreServices.woa/ws/wsLookup?id=9999&country=jp&urlDesc="
+      Apple-Tk:
+      - 'false'
+      X-B3-Spanid:
+      - 55d77f13851fc18b
+      Content-Type:
+      - text/javascript; charset=utf-8
+      B3:
+      - a8a1e3184a9317dfa6be3d0752fa1361-55d77f13851fc18b
+      X-Content-Type-Options:
+      - nosniff
+      X-B3-Traceid:
+      - a8a1e3184a9317dfa6be3d0752fa1361
+      X-Webobjects-Loadaverage:
+      - '0'
+      X-Responding-Instance:
+      - 'MZStoreServices:2003915:::'
+      Apple-Seq:
+      - '0'
+      Content-Disposition:
+      - attachment; filename=1.txt
+      Apple-Originating-System:
+      - MZStoreServices
+      X-Apple-Orig-Url:
+      - http://mzstoreservices-int-st.itunes.apple.com/lookup?id=9999&country=jp
+      X-Apple-Application-Site:
+      - ST11
+      Apple-Timing-App:
+      - 19 ms
+      X-Apple-Application-Instance:
+      - '2003915'
+      Vary:
+      - Accept-Encoding
+      Cache-Control:
+      - max-age=86400
+      Date:
+      - Thu, 04 Apr 2024 01:13:22 GMT
+      Content-Length:
+      - '42'
+      X-Cache:
+      - TCP_MISS from a23-203-249-19.deploy.akamaitechnologies.com (AkamaiGHost/11.4.4.1-55329865)
+        (-)
+      X-True-Cache-Key:
+      - "/L/itunes.apple.com/lookup vcd=2897 ci2=country=jp&id=9999///"
+      Connection:
+      - keep-alive
+      X-Cache-Remote:
+      - TCP_MISS from a23-205-82-77.deploy.akamaitechnologies.com (AkamaiGHost/11.4.4.1-55329865)
+        (-)
+      X-Apple-Partner:
+      - origin.0
+    body:
+      encoding: UTF-8
+      string: |2+
+
+
+
+        {
+         "resultCount":0,
+         "results": []
+        }
+
+
+  recorded_at: Thu, 04 Apr 2024 01:13:22 GMT
+recorded_with: VCR 6.2.0
+...
